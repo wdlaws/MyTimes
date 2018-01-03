@@ -1,4 +1,7 @@
 
+
+
+
 .Header {
   font-family: Verdana;
   font-size: 14px;
@@ -11,6 +14,7 @@
   width:100%;
   height: 80px;
   background-color: white;
+  top: 0;
   }
 
 .logo {
@@ -45,26 +49,29 @@ a {
 .container {
   padding-top:100px;
   display:flex;
-  justify-content: space-between;
   width: 100%;
+  padding-bottom:30px;
 }
 
 .column {
   margin-right:30px;
   display: flex;
   flex-direction: column;
-}
+  }
 
 .column.large {
   width:630px;
-  flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap:wrap;
+
   }
 
-.column.large .mainheadline {
+.mainheadline {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png");
   display: flex;
   height: 300px;
-}
+
+  }
 
 .mainheadline span {
   display:flex;
@@ -72,6 +79,8 @@ a {
   font-weight: bold;
   font-size: 40px;
   color: white;
+  align-items:center;
+  margin-left:15px;
 }
 
 .narrative {
@@ -88,16 +97,18 @@ a {
   width: 240px;
 }
 
-div {
-  border: 1px solid black;
-}
 
 .picture  {
+  display:flex;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
   height:300px;
+  width:300px;
+  align-items:center;
+  text-align: center;
+  margin-right:10px;
 }
 
 .cat {
@@ -114,4 +125,52 @@ div {
 
 .sub {
   width:300px;
+  }
+
+.bites h3{
+  font-size: 16px;
+  font-weight:bold;
+  text-align:center;
+}
+
+.bites span {
+  border-bottom: black 1px solid;
+  padding:8px 10px 8px 10px;
+  display:flex;
+  background-color:WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  height:30px;
+  align-items: center;
+}
+
+.Footer {
+  width:100%;
+  height: 350px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:MediumAquamarine;
+  margin:auto;
+  font-family: Verdana;
+  font-size:12px;
+}
+
+
+
+.whitelogo {
+  display: inline-block;
+  padding-right:20px;
+  border-right: white 2px solid;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.footernav {
+  display: inline-block;
+  margin-left:15px;
 }
